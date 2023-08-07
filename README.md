@@ -6,6 +6,27 @@ This web-based application is designed to manage user authentication and Bitcoin
 2. Create BTC Wallet: Generate new Bitcoin wallets for authenticated users.
 3. View Wallets: Allow users to view their existing wallets, including Mnemonic and XPUB.
 
+## Technology Stack
+Backend:
+1. Node.js: Runtime environment for executing server-side JavaScript code.
+2. Express: Web application framework for building web and API servers.
+3. MySQL: Relational database for storing and retrieving data.
+4. bcrypt: Library for hashing and securing user passwords.
+5. JWT: Used for authentication and transmitting information between parties in JSON format.
+6. Cors: Middleware for enabling Cross-Origin Resource Sharing.
+7. dotenv: Module for loading environment variables from a .env file into process.env.
+
+Frontend:
+1. HTML/CSS: Standard markup and styling languages for creating web pages.
+2. JavaScript: Programming language to make web pages dynamic and interactive.
+3. Axios: Promise-based HTTP client for making requests.
+
+Others:
+1. Tatum API: An API for creating and managing Bitcoin wallets.
+
+Development Tools: 
+1. Visual Studio Code: Code editor.
+
 ## Installation 
 
 ### Prerequisites
@@ -30,27 +51,6 @@ Follow these steps to set up the project on your local machine:
 5. MySQL Database Setup: Open MySQL Workbench, connect to your MySQL server, and create the necessary database and tables as defined in the project's SQL schema files. Make sure to configure the connection credentials to match those in the .env file.
 
 6. Start the Server: Run npm start to start the server. The application will be accessible at http://localhost:3000.
-
-### Technology Stack
-Backend:
-1. Node.js: Runtime environment for executing server-side JavaScript code.
-2. Express: Web application framework for building web and API servers.
-3. MySQL: Relational database for storing and retrieving data.
-4. bcrypt: Library for hashing and securing user passwords.
-5. JWT: Used for authentication and transmitting information between parties in JSON format.
-6. Cors: Middleware for enabling Cross-Origin Resource Sharing.
-7. dotenv: Module for loading environment variables from a .env file into process.env.
-
-Frontend:
-1. HTML/CSS: Standard markup and styling languages for creating web pages.
-2. JavaScript: Programming language to make web pages dynamic and interactive.
-3. Axios: Promise-based HTTP client for making requests.
-
-Others:
-1. Tatum API: An API for creating and managing Bitcoin wallets.
-
-Development Tools: 
-1. Visual Studio Code: Code editor.
 
 ### Usage
 Here's how to interact with the main functionalities of the application:
