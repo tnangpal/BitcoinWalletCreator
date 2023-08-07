@@ -1,0 +1,9 @@
+# Database Connection
+DB_USER=root               # Example: root
+DB_PASSWORD=12345          # Example: 12345
+
+# JWT Secret Key
+SECRET_KEY=mysecretkey123  # Example: mysecretkey123
+
+# Tatum API Key
+TATUM_API_KEY=xyz123abc    # Example: xyz123abc
