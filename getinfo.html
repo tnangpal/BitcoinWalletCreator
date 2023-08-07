@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Info Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <style>
+        #walletsTable {
+            margin: 0 auto;
+            text-align: center;
+            width: 75%;
+            font-size: 13px;
+        }
+        #walletsTable th, #walletsTable td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome!</h1>
+
+    <div id="getinfoarea">
+        <p>Get Information here: </p>
+        <button id="createWalletButton">Create BTC Wallet</button>
+        <button id="viewWalletsButton">View Wallets</button>
+    </div>
+    <table id="walletsTable">
+        <thead>
+            <tr>
+                <th>Mnemonic</th>
+                <th>XPUB</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <script>
+        // Create Wallet
+        document.getElementById('createWalletButton').addEventListener('click', function() {
+    var token = localStorage.getItem('jwtToken');
+    if (token) {
+        fetch('http://localhost:3000/createWallet', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${token}`
+            },
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === 'success') {
+                alert('Wallet Created Successfully');
+                console.log(data);
+            } else {
+                console.error('Error:', data.error);
+            }
+        })
+        .catch(error => console.error('Error:', error));
+    } else {
+        console.log('No JWT token found');
+    }
+});
+
+        // View Wallets
+        document.getElementById('viewWalletsButton').addEventListener('click', function() {
+            var token = localStorage.getItem('jwtToken');
+            if (token) {
+                fetch('http://localhost:3000/getWallets', {
+                    method: 'GET',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'Authorization': `Bearer ${token}`
+                    },
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.status === 'success') {
+                        var tableBody = document.getElementById('walletsTable').getElementsByTagName('tbody')[0];
+                        tableBody.innerHTML = '';
+                        data.wallets.forEach(wallet => {
+                            var row = tableBody.insertRow();
+                            row.insertCell(0).innerHTML = wallet.Mnemonic;
+                            row.insertCell(1).innerHTML = wallet.XPUB;
+                        });
+                    } else {
+                        console.log('Error:', data.error);
+                    }
+                })
+                .catch(error => console.error('Error:', error));
+            } else {
+                console.log('No JWT token found');
+            }
+        });
+    </script>
+    
+</body>
+</html>
