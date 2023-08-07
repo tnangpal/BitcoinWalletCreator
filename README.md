@@ -31,6 +31,27 @@ Follow these steps to set up the project on your local machine:
 
 6. Start the Server: Run npm start to start the server. The application will be accessible at http://localhost:3000.
 
+### Technology Stack
+Backend:
+1. Node.js: Runtime environment for executing server-side JavaScript code.
+2. Express: Web application framework for building web and API servers.
+3. MySQL: Relational database for storing and retrieving data.
+4. bcrypt: Library for hashing and securing user passwords.
+5. JWT: Used for authentication and transmitting information between parties in JSON format.
+6. Cors: Middleware for enabling Cross-Origin Resource Sharing.
+7. dotenv: Module for loading environment variables from a .env file into process.env.
+
+Frontend:
+1. HTML/CSS: Standard markup and styling languages for creating web pages.
+2. JavaScript: Programming language to make web pages dynamic and interactive.
+3. Axios: Promise-based HTTP client for making requests.
+
+Others:
+1. Tatum API: An API for creating and managing Bitcoin wallets.
+
+Development Tools: 
+1. Visual Studio Code: Code editor.
+
 ### Usage
 Here's how to interact with the main functionalities of the application:
 
@@ -52,9 +73,6 @@ Here's how to interact with the main functionalities of the application:
 1. View Wallets: Click the 'View Wallets' Button on the getinfo page. All of your wallets, including Mnemonic and XPUB, will be displayed in a center-aligned table.
 
 <img width="1449" alt="Screenshot 2023-08-07 at 10 35 02 PM" src="https://github.com/tnangpal/BitcoinWalletCreator/assets/124189649/710e00f5-cc2f-4f09-94e2-26219677c786">
-
-
-
 
 
 
