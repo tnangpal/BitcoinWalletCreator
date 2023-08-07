@@ -1,5 +1,5 @@
 # Bitcoin Wallet Creator
-This web-based application is designed to manage user authentication and Bitcoin wallet creation. Users can sign up, log in, create, and view their Bitcoin wallets, with all information securely stored and managed. The project utilizes the Tatum API to interact with Bitcoin networks.
+This web-based application is designed to manage user authentication and Bitcoin wallet creation. Users can sign up, log in, create, and view their Bitcoin wallets, with all information securely stored and managed. The project utilizes the Tatum API to interact with Bitcoin networks. [https://apidoc.tatum.io/tag/Bitcoin]
 
 ## Key Features
 1. User Signup & Login: Authenticate users and manage sessions.
