@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+.show-password-label {
+    display: block;
+    text-align: center;
+    font-size: 15px; 
+    padding: 10px; 
+}
+
+.show-password-label span {
+    white-space: nowrap;
+}
+
+#signuparea {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#signuparea input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#signuparea button {
+    width: 90%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#signuparea button:hover {
+    background-color: #45a049;
+}
+
+#address-area {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#address-area button {
+    width: 100%;
+    padding: 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#address-area button:hover {
+    background-color: #007B9A;
+}
+
+
+#loginarea {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#loginarea input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#loginarea button {
+    width: 90%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#loginarea button:hover {
+    background-color: #45a049;
+}
+
+#getinfoarea {
+    width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#getinfoarea button {
+    width: 90%;
+    padding: 10px;
+    background-color: #007B9A;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#getinfo button:hover {
+    background-color: darkslategrey;
+}
